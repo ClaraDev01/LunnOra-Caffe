@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5E1224;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    border-bottom: 1px solid #E2C582;
+}
+
+.navbar img {
+    height: 52px;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.nav-btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #E2C582;
+    color: #5E1224;
+    font-family: inherit;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#home {
+    min-height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #5E1224 17%, #C4264B 100%);
+    padding: 0 80px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.hero-subtitle {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #E2C582;
+    letter-spacing: 2px;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.1;
+    color: white;
+    margin-top: 30px;
+
+}
+
+.hero-text h1 span {
+    color: #C1A461;
+}
+
+.hero-text p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.7;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.primary-btn {
+    font-family: 'Playfair Display', serif;
+    width: 130px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #C1A461;
+    border-radius: 12px;
+    transition: 0.1s;
+    margin-right: 25px;
+}
+
+.primary-btn:hover {
+    background-color: #C1A461;
+    color: #5E1224;
+    transform: translateY(-2px);
+    font-weight: 600;
+}
+
+.secondary-btn {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #C1A461;
+    padding-bottom: 2px;
+    transition: 0.1s;
+}
+
+.secondary-btn:hover {
+    color: #C1A461;
+    transform: translateY(-2px);
+    font-weight: 600;
+}
+
+.hero-image img {
+    width: 500px;
+}
