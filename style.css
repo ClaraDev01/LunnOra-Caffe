@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     background-color: #5E1224;
     font-family: 'Playfair Display SC', serif;
@@ -33,6 +38,10 @@ body {
     text-decoration: none;
     color: white;
     font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #E2C582;
 }
 
 .nav-btn {
@@ -88,7 +97,6 @@ body {
     line-height: 1.1;
     color: white;
     margin-top: 30px;
-
 }
 
 .hero-text h1 span {
@@ -154,4 +162,126 @@ body {
 
 .hero-image img {
     width: 500px;
+}
+
+/* SECTION - POPULAR */
+#populares {
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 30px 80px;
+}
+
+.popular-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.popular-subtitle {
+    display: block;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #C4264B;
+    text-transform: uppercase;
+}
+
+.popular-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 43px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #C1A461;
+}
+
+.popular-top h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    color: #C4264B;
+    margin: 0;
+}
+
+.popular-top a {
+    text-decoration: none;
+    color: #C4264B;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.drinks-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.drink-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.drink-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    color: #C4264B;
+    margin-bottom: 10px;
+}
+
+.drink-img-container {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.matcha-glow .drink-img-container {
+    background: radial-gradient(circle, #3B4E0C 0%, #ffffff 70%);
+}
+
+.cappuccino-glow .drink-img-container {
+    background: radial-gradient(circle, #974B00 0%, #ffffff 70%);
+}
+
+.strawberry-glow .drink-img-container {
+    background: radial-gradient(circle, #FF003B 0%, #ffffff 70%);
+}
+
+.drink-card img {
+    max-height: 260px;
+    object-fit: contain;
+}
+
+.drink-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    color: #5E1224;
+    margin: 0;
+}
+
+.drink-card p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #5E1224;
+    margin: 5px 0 10px 0;
+    font-weight: 400;
+}
+
+.stars {
+    color: #F7FF59;
+    text-shadow: 0px 0px 1px #E1C16E;
+    font-size: 24px;
+    letter-spacing: 2px;
 }
