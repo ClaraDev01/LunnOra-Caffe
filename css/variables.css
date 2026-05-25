@@ -1,0 +1,18 @@
+:root {
+    --color-primary: #5E1224;
+    --color-primary-mid: #C4264B;
+    --color-card-dark: #742638;
+    --color-stars: #F7FF59;
+    --color-gold: #C1A461;
+    --color-gold-light: #E2C582;
+    --color-gold-bg: #E8CB88;
+    --color-gold-quote: #F5D895;
+    --color-bg-light: #FAF5EC;
+    --color-white: #ffffff;
+
+    --font-display: 'Playfair Display', serif;
+    --font-sc: 'Playfair Display SC', serif;
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
