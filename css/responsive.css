@@ -1,0 +1,505 @@
+@media screen and (max-width: 1024px) {
+
+    .navbar,
+    #home,
+    #populares,
+    #novidades,
+    #footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .nav-links ul {
+        gap: 30px;
+    }
+
+    #home {
+        height: auto !important;     
+        min-height: auto !important; 
+        padding-top: 140px;          
+        padding-bottom: 40px;        
+    }
+
+    .hero-text h1 {
+        font-size: 46px;
+    }
+
+    .hero-image img {
+        width: 340px;
+    }
+
+    #populares .drinks-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 15px;
+        margin-top: 20px;
+    }
+
+    #populares h2, 
+    #populares .popular-top h2 {
+        font-size: 26px; 
+    }
+
+    #populares .drink-card {
+        width: 100%;
+    }
+
+    #populares .drink-card:nth-child(3) {
+        grid-column: span 2;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .drink-number {
+        font-size: 44px;
+    }
+
+    .drink-img-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .drink-card img {
+        max-height: 155px;
+    }
+
+    #sobre {
+        flex-direction: column;
+        height: auto !important;      
+        min-height: auto !important;  
+    }
+
+    .about-image {
+        width: 100%;
+        height: 340px;
+        min-height: auto;
+    }
+
+    .about-image img {
+        width: auto;
+        max-width: 320px;
+    }
+
+    .about-content {
+        width: 100%;
+        padding: 36px 40px 50px;
+    }
+
+    .about-text h2 {
+        font-size: 22px;
+    }
+
+    #novidades {
+        height: auto !important;
+        min-height: auto !important;
+        padding-top: 40px;  
+        padding-bottom: 60px;
+    }
+
+    #novidades h2,
+    #novidades .news-top h2 {
+        font-size: 36px;
+    }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+        max-width: 900px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .news-card {
+        width: 100%;
+        max-width: 410px; 
+        margin: 0 auto;
+    }
+
+    .news-card img {
+        max-height: 160px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    #footer {
+        height: auto !important;
+        min-height: auto !important;
+        padding: 40px 40px 20px;
+    }
+
+    #footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+    }
+
+    #footer .footer-brand {
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #footer .footer-brand img {
+        margin: 0 auto 12px;
+    }
+
+    #footer .footer-columns {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between; 
+        width: 100%;
+    }
+
+    #footer .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    #footer .footer-social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    #footer .footer-links ul,
+    #footer .footer-social ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar,
+    #home,
+    #populares,
+    #novidades,
+    #footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #home,
+    #sobre,
+    #populares,
+    #novidades {
+        height: auto;
+        min-height: auto;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    .navbar img {
+        height: 42px;
+        width: auto;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    #menu-hack {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: var(--color-gold-light);
+        font-size: 26px;
+        cursor: pointer;
+        order: 2;
+    }
+
+    .nav-links {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(92, 14, 36, 0.98);
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+        z-index: 999;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        gap: 24px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    #menu-hack:checked~.nav-links {
+        height: 220px;
+    }
+
+    #home {
+        padding-top: 110px;
+        padding-bottom: 40px;
+    }
+
+    #home .hero-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    #home .hero-text h1 {
+        font-size: 23px;
+    }
+
+    #home .hero-subtitle {
+        font-size: 9px;
+    }
+
+    #home .hero-text p {
+        font-size: 12px;
+    }
+
+    #home .hero-image img {
+        max-width: 170px;
+    }
+
+    #populares .popular-top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        width: 100%;
+    }
+
+    #populares .popular-top h2 {
+        font-size: 17px;
+        white-space: normal;
+        line-height: 1.3;
+        text-align: left;
+    }
+
+    #populares .popular-top a {
+        font-size: 11px;
+        align-self: flex-end;
+        letter-spacing: 1px;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 2px;
+    }
+
+    #populares .drinks-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 15px;
+        margin-top: 20px;
+    }
+
+    #populares .drink-card {
+        width: 100%;
+    }
+
+    #populares .drink-card:nth-child(3) {
+        grid-column: span 2;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    #populares .drink-number {
+        font-size: 21px;
+        margin-bottom: 6px;
+    }
+
+    #populares .drink-img-container {
+        width: 135px;
+        height: 135px;
+        margin-bottom: 10px;
+    }
+
+    #populares .drink-card img {
+        max-height: 105px;
+    }
+
+    #populares .drink-card h3 {
+        font-size: 14px;
+    }
+
+    #populares .drink-card p {
+        font-size: 11px;
+    }
+
+    #populares .stars {
+        font-size: 10px;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sobre .about-image {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        background-color: var(--color-gold);
+        background-image: url(../assets/about/about-bg.png);
+        background-repeat: repeat;
+        background-size: 300px;
+        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #sobre .about-image img {
+        max-width: 200px;
+        height: auto;
+        width: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    #sobre .about-content {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    #sobre .about-text h2 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    #sobre .quote-text {
+        font-size: 11px;
+    }
+
+    #novidades .news-top h2 {
+        font-size: 19px;
+    }
+
+    #novidades .news-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    #novidades .news-card {
+        min-height: 240px;
+    }
+
+    #novidades .news-card-img {
+        padding: 10px;
+    }
+
+    #novidades .news-number {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    #novidades .news-card img {
+        max-height: 110px;
+    }
+
+    #novidades .news-info {
+        padding: 10px;
+    }
+
+    #novidades .news-info h3 {
+        font-size: 12px;
+    }
+
+    #footer {
+        padding: 40px 20px 20px; 
+    }
+
+    #footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        width: 100%;
+    }
+
+    #footer .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #footer .footer-brand img {
+        height: 38px; 
+        margin: 0 auto 12px;
+    }
+
+    #footer .footer-brand p {
+        text-align: center;
+        max-width: 280px;
+        margin: 0 auto;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    #footer .footer-columns {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between; 
+        width: 100%;
+        max-width: 340px; 
+        margin: 0 auto;
+    }
+
+    #footer .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    #footer .footer-social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    #footer .footer-links span,
+    #footer .footer-social span {
+        margin-bottom: 12px;
+        font-size: 11px;
+    }
+
+    #footer .footer-links ul,
+    #footer .footer-social ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+    }
+
+    #footer .footer-links a,
+    #footer .footer-social a {
+        font-size: 13px;
+        display: block;
+    }
+
+}
